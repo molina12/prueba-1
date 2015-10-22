@@ -28,4 +28,8 @@ def salarios(request):
     output = ', '.join([p.question_text for p in latest_question_list])
     return HttpResponse(output)
 
+def tikets(request):
+    latest_question_list = Question.objects.order_by('-pub_date')[:5]
+    output = ', '.join([p.question_text for p in latest_question_list])
+    return HttpResponse(output)
 # Create your views here.

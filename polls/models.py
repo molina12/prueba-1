@@ -29,3 +29,7 @@ class zzzzzzzz(models.Model):
 class Salario(models.Model):
     cantidad = models.CharField(max_length=200)
     bono = models.CharField(max_length=200)
+
+class tikets(models.Model):
+    saldo = models.CharField(max_length=50)
+    bono = models.CharField(max_length=50)
